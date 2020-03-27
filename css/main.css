@@ -183,6 +183,20 @@ section{
     
 }
 
+/*Contact*/
+
+.contact a{
+    display: block;
+    margin-bottom: 10px;
+
+}
+.contact p{
+    margin-bottom: 40px;
+}
+
+.contact a:hover{
+    color: #BA1B1D;
+}
 
 
 
