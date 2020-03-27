@@ -3,199 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
+        <!--Header-->
 
-        <div class="header primary accent-background" >
-            <div class="logo">
-                <h1>Youssef Behti</h1>
-            </div>
-            <div class="navigation">
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                        About Me
-                    </li>
-                    <li class="navigation-item">
-                        Experience
-                    </li>
-                    <li class="navigation-item">
-                        Skills
-                    </li>
-                    <li class="navigation-item">
-                        Education
-                    </li>
-                    <li class="navigation-item">
-                        Contact
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="profil primary-background">
-    
-            
-            <img src="https://res.cloudinary.com/behticloud/image/upload/v1584867506/samples/80975685_10223075885944973_4134473056867319808_o_2.jpg" alt="">
-
-            <div class="description">
-                <div style="width:80%; margin:auto;">
-                    <hr style="border:2px solid white">
+        <header class="header">
+            <div class="profil">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/v1584867506/samples/80975685_10223075885944973_4134473056867319808_o_2.jpg" alt="">
+                <div>
+                    <h2>
+                        Bonjour! Je m'appele Youssef, je suis développeur fullstack web
+                    </h2>
+                    <a href="#"> 
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="#"> 
+                        <i class="fab fa-github-square fa-2x"></i>
+                    </a>
+                    
                 </div>
-                <h1>Bonjour! Je m'appel <span class="accent">Youssef</span> </h1>
-                
-                <h2>Full Stack Developper</h2>
-                <div style="width:80%; margin:auto;">
-                    <hr style="border:2px solid white">
-                </div>
-                
-                
+               
             </div>
+        </header>
+        <!--About-->
         
-
-        </div> 
-        
-        
-        <div class="about">
-
-            <h1 class="accent">About Me</h1>
+        <section class="about">
+           
             <div class="presentation">
 
-                <p>Bonjour je suis un développeur junior de Liège. J'aime apprendre de nouvelles choses et entre autre de nouvelles technos.Il y a toujours un cour en ligne ou autre qui me fait de l'oeil et qui suis-je pour résister à cet appel. J'aime biensure d'autre choses comme les jeux de société ou les sorties mais pas avant d'avoir fini ce que j'ai commencé </p>
-
+                <h1>About Me</h1>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque veniam unde hic ullam doloribus corporis, sapiente illum vitae cupiditate commodi, necessitatibus labore aperiam nihil laudantium voluptas perferendis, a omnis adipisci dolorem obcaecati debitis tempore? Molestiae consectetur laborum sit! Quas, voluptatum ab! Quasi corrupti quos cupiditate omnis nulla tempora sunt voluptas.
+                </p>
+            </div>
+            <div class="experiences">
+                <div class="experience-item">
+                    <h2>Liege Hotel SA (Park-inn)</h2>
+                    <h3>Front Desk Officer</h3>
+                    <ul>
+                        <li>Check-in/Check-out</li>
+                        <li>Reservation</li>
+                        <li>Facturation</li>
+                        <li>Prise en charge client</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h2>JG Square</h2>
+                    <h3>Frontend Developper</h3>
+                    <ul>
+                        <li>Formation au framework VUE.JS</li>
+                        <li>Développement d'une application pour une école permettant aux professeurs de partager du contenu avec leurs élèves et collègues</li>
+                    </ul>
+                </div>
             </div>
             
-
-        </div>
-
-        <div class="experience">
-
-            
-              <div class="card primary-background">
-                  <h3 class="title">
-                      Liege Hotel SA (Park-inn Liège Airport)
-                  </h3>
-                  
-                  <div style="width:20%; margin:0 auto">
-                    <hr style="border:3px solid #FFD400">
-                  </div>
-                  <h4 class="subtitle">
-                    Front desk officer
-                </h4>
-                  
-
-                  <div class="description">
-                    <ul>
-                        <li>
-                            Facturation
-                        </li>
-                        <li>
-                            Check-in/Check-out
-                        </li>
-                        <li>
-                            Reservation
-                        </li>
-                        <li>
-                            Prise en charge des clients 
-                        </li>
-                    </ul>
-                  </div>
-                  
-              </div>
-              <div class="card primary-background">
-                  <h3 class="title">
-                      JG Square SPRL
-                  </h3>
-                  
-                  <div style="width:20%; margin:0 auto">
-                    <hr style="border:3px solid #FFD400">
-                  </div>
-                  <h4 class="subtitle">
-                      Front-end developper
-                  </h4>
-                  
-
-                  <div class="description">
-                    <ul>
-                        <li>
-                            Formation en VUE.JS
-                        </li>
-                        <li>
-                            Developpement d'une application pour une école
-                            <li>
-                                Plateforme permettant au professeur de partager du contenu avec leur élève et collègues
-                            </li>
-                        </li>
-                    </ul>
-                  </div>
-                   
-                  
-                  
-              </div>
-
-        </div>
-
-        <div class="skills primary">
-
-            <div class="card accent-background">
-                <h3>
-                    Technologies
-                </h3>
-                <div>
-                    <hr style="width:20%; margin:0 auto; border:3px solid white">
-                </div>
-                <div class="card-section">
-                    <h5>
-                        Langages
-                    </h5>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS/TS</li>
-                        <li>PHP</li>
-                        <li>Node</li>
-                    </ul>
-                </div>
-                <div class="card-section">
-                    <h5>
-                        Frameworks
-                    </h5>
-                    <ul>
-                        <li>Vue.JS</li>
-                        <li>Angular</li>
-                        <li>Jquery</li>
-                        <li>Bootstrap</li>
-                        <li>Symfony</li>
-                        <li>Express</li>
-                    </ul>
-                </div>
-                <div class="card-section">
-                    <h5>Autres</h5>
-                    <ul>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                        <li>GIT</li>
-                        <li>NPM</li>
-                        
-                    </ul>
-                </div>
-                
+        </section>
+        <!--Technoligies-->
+        <section class="technologies">
+            <h1>
+                Technologies
+            </h1>
+            <hr>
+            <h2>Front End</h2>
+            <div class="frontend">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585303421/samples/600px-HTML5_logo_and_wordmark.svg.png" alt="html">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585303422/samples/CSS3_logo_and_wordmark.svg.png" alt="css">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585303422/samples/397px-Javascript-shield.svg.png" alt="js">
             </div>
-
-        </div>
-
-        <div class="contact">
-
-            <p>contact section</p>
-
-        </div>
+            <h2>Back End/DataBase</h2>
+            <div class="backend">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585305039/samples/1279px-Font_Awesome_5_brands_php.svg.png" alt="php">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585304959/samples/1280px-Node.js_logo_2015.svg.png" alt="node">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585304959/samples/mysql-logo.png" alt="mysql">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585304959/samples/Mongodb.png" alt="mongo">
+            </div>
+            <h2>Framework</h2>
+            <div class="framework">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585305772/samples/600px-Bootstrap_logo.svg.png" alt="bootsrap">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585305773/samples/Symfony2.svg.png" alt="symfony">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585305773/samples/888px-Vue.js_Logo_2.svg.png" alt="vue">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585305773/samples/Angular_full_color_logo.svg.png" alt="angular">
+                <img src="https://res.cloudinary.com/behticloud/image/upload/c_scale,w_512/v1585305773/samples/Expressjs.png" alt="express">
+            </div>
+        </section>
     </div>
-    
-    
-
     
 </body>
 </html>
