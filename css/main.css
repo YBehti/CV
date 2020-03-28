@@ -4,12 +4,13 @@
     padding: 0;
   }
   
+  
 
 body{
 
     font-family: 'Sen', sans-serif;
     background: #F7F4F3;
-    width: 100%;
+    
     color: #000;
     font-size: 16px;
     line-height: 1.5;
@@ -40,15 +41,16 @@ h1{
     
     
 }
+li{
+    margin:10px 5px;
+}
 
 section{
     width:80%;
     margin: 200px auto;
 }
 
-.container{
-    
-}
+
 
 /*Header*/
 
@@ -61,10 +63,9 @@ section{
 .header .profil{
     display: flex;
     width: 80%;
-    height: 100%;
     margin: 0 auto; 
     background: #2D3142;
-    align-content: flex-end;
+    
     
     
 }
@@ -114,13 +115,28 @@ section{
 }
 
 .about .presentation{
-    width: 50%;
+    width: 40%;
+}
+
+
+.about .presentation a{
+    display: block;
+    margin-bottom: 10px;
+
+}
+.about .presentation p{
+    margin-bottom: 40px;
+}
+
+.about .presentation a:hover{
+    color: #BA1B1D;
 }
 
 
 
+
 .about .experiences{
-    width: 30%;
+    width: 40%;
 }
 
 .about .experiences .experience-item{
@@ -183,19 +199,103 @@ section{
     
 }
 
-/*Contact*/
 
-.contact a{
-    display: block;
+/*Footer*/
+
+.footer{
+    background: #BA1B1D;
+    padding: 50px 0;
+}
+
+.footer .links{
     margin-bottom: 10px;
-
-}
-.contact p{
-    margin-bottom: 40px;
 }
 
-.contact a:hover{
-    color: #BA1B1D;
+.footer .links a i{
+    color: #F7F4F3;
+}
+
+.footer .links a:hover i{
+    color: #2D3142;
+}
+/*Media Queries 1000px*/
+
+@media(max-width:1000px){
+
+    /*Technologies*/
+
+    .technologies img{
+        height: 80px;
+        
+    }
+
+    .backend{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .framework{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/*Media Queries 800px*/
+
+@media(max-width:800px){
+    /*Header*/
+    .header .profil{
+        display: block;
+        width: 90%;
+    }
+    .header .profil img{
+        width: 100%;
+    }
+    .header .profil div{
+        width: 80%;
+        margin: 50px auto;
+        padding-bottom: 50px;
+
+    }
+
+    /*About*/
+
+    .about{
+        display: block;
+    }
+
+    .about .presentation{
+        width: 100%;
+       
+    }
+    .about .presentation a{
+        display: inline-block;
+        margin: 10px 20px;
+    
+    }
+    .about .experiences{
+        width: 100%;
+        
+    }
+
+    .about .experiences .experience-item{
+        margin-bottom: 40px;
+    }
+
+    /*Technologies*/
+
+    .technologies img{
+        height: 100px;
+        
+    }
+
+    .backend{
+        grid-template-columns: 1fr;
+    }
+
+    .framework{
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 
