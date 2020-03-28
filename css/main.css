@@ -58,6 +58,8 @@ section{
     background: linear-gradient(#BA1B1D 0%, #BA1B1D 70%,#F7F4F3 70%, #F7F4F3 100%);
     height: 100vh;
     padding-top: 100px;
+    margin-bottom: 20px;
+    
 }
 
 .header .profil{
@@ -72,6 +74,7 @@ section{
 
 .header .profil img{
     width:50%;
+    object-fit: contain;
 
 }
 
@@ -112,6 +115,7 @@ section{
    
     display: flex;
     justify-content: space-between;
+    width:80%;
 }
 
 .about .presentation{
@@ -220,7 +224,7 @@ section{
 }
 /*Media Queries 1000px*/
 
-@media(max-width:1000px){
+@media(max-width:1370px){
 
     /*Technologies*/
 
@@ -244,15 +248,20 @@ section{
     /*Header*/
     .header .profil{
         display: block;
-        width: 90%;
+       
+        
+        
     }
     .header .profil img{
+        
+        height: auto;
         width: 100%;
+       
     }
     .header .profil div{
         width: 80%;
-        margin: 50px auto;
-        padding-bottom: 50px;
+        margin: 50px 20px;
+        padding: 50px 0;
 
     }
 
@@ -297,6 +306,32 @@ section{
 
 
 }
+
+@media(orientation:landscape){
+    
+    .header .profil{
+        display: flex;
+        width: 80%;
+        
+        
+        
+        
+        
+    }
+    
+    .header .profil img{
+        width:50%;
+        height: auto;
+    
+    }
+    
+    .header .profil div{
+        width:50%;
+        align-self: center;
+       
+    }
+}
+
 
 
 
