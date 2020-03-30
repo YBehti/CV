@@ -4,13 +4,11 @@
     padding: 0;
   }
   
-  
 
 body{
 
     font-family: 'Sen', sans-serif;
     background: #F7F4F3;
-    
     color: #000;
     font-size: 16px;
     line-height: 1.5;
@@ -36,18 +34,15 @@ ul{
 }
 
 h1{
-    margin-bottom: 10px;
-    font-size: 48px ;
+    margin: 10px auto;
+    font-size: 2rem ;
     
     
-}
-li{
-    margin:10px 5px;
 }
 
 section{
     width:80%;
-    margin: 200px auto;
+    margin: 100px auto;
 }
 
 
@@ -56,10 +51,8 @@ section{
 
 .header{
     background: linear-gradient(#BA1B1D 0%, #BA1B1D 70%,#F7F4F3 70%, #F7F4F3 100%);
-    height: 100vh;
+    height: auto;
     padding-top: 100px;
-    margin-bottom: 20px;
-    
 }
 
 .header .profil{
@@ -72,16 +65,23 @@ section{
     
 }
 
-.header .profil img{
+.header .profil .image{
     width:50%;
-    object-fit: contain;
+    height: auto;
+}
+
+.header .profil img{
+    display: block;
+    width:100%; 
+    max-height: 100%;
+    
 
 }
 
-.header .profil div{
-    width:50%;
+.header .profil .presentation{
+    width:40%;
     align-self: center;
-    margin: 0 30px;
+    margin: 0 auto;
     
     color:  #F7F4F3 ;
     
@@ -115,18 +115,25 @@ section{
    
     display: flex;
     justify-content: space-between;
-    width:80%;
 }
 
 .about .presentation{
-    width: 40%;
+    width: 50%;
 }
-
 
 .about .presentation a{
     display: block;
     margin-bottom: 10px;
 
+}
+.about .presentation .socials{
+    display: none;
+    justify-content: center;
+    
+}
+
+.about .presentation .socials i{
+    margin-right: 10px;
 }
 .about .presentation p{
     margin-bottom: 40px;
@@ -140,7 +147,7 @@ section{
 
 
 .about .experiences{
-    width: 40%;
+    width: 30%;
 }
 
 .about .experiences .experience-item{
@@ -203,6 +210,20 @@ section{
     
 }
 
+/*Contact*/
+
+.contact a{
+    display: block;
+    margin-bottom: 10px;
+
+}
+.contact p{
+    margin-bottom: 40px;
+}
+
+.contact a:hover{
+    color: #BA1B1D;
+}
 
 /*Footer*/
 
@@ -222,115 +243,69 @@ section{
 .footer .links a:hover i{
     color: #2D3142;
 }
-/*Media Queries 1000px*/
 
-@media(max-width:1370px){
-
-    /*Technologies*/
-
-    .technologies img{
-        height: 80px;
-        
-    }
+@media(max-width:1360px){
 
     .backend{
         grid-template-columns: repeat(2,1fr);
+        
     }
-
+    
     .framework{
         grid-template-columns: repeat(2,1fr);
     }
+    
 }
 
-/*Media Queries 800px*/
 
-@media(max-width:800px){
-    /*Header*/
+@media(max-width:850px){
+    .header .profil .presentation{
+        display: none;
+    }
+
     .header .profil{
-        display: block;
-       
-        
-        
-    }
-    .header .profil img{
-        
-        height: auto;
-        width: 100%;
-       
-    }
-    .header .profil div{
-        width: 80%;
-        margin: 50px 20px;
-        padding: 50px 0;
-
+        flex-direction: column;
+        width:50%;
     }
 
-    /*About*/
+    .header .profil .image{
+    width:100%;
+    height: auto;
+    }
 
     .about{
-        display: block;
+        flex-direction: column;
     }
-
     .about .presentation{
         width: 100%;
-       
     }
-    .about .presentation a{
-        display: inline-block;
-        margin: 10px 20px;
-    
+
+    .about .presentation .socials{
+        display: flex;
+        
+        
     }
+
     .about .experiences{
         width: 100%;
-        
-    }
-
-    .about .experiences .experience-item{
-        margin-bottom: 40px;
-    }
-
-    /*Technologies*/
-
-    .technologies img{
-        height: 50px;
-        
     }
 
     .backend{
         grid-template-columns: 1fr;
+        
     }
-
+    
     .framework{
         grid-template-columns: 1fr;
     }
-
-
 }
 
-@media(orientation:landscape){
-    
-    .header .profil{
-        display: flex;
-        width: 80%;
-        
-        
-        
-        
-        
-    }
-    
-    .header .profil img{
-        width:50%;
-        height: auto;
-    
-    }
-    
-    .header .profil div{
-        width:50%;
-        align-self: center;
-       
+@media(max-width:500px){
+    .technologies img{
+        height: 50px;
     }
 }
+
 
 
 
